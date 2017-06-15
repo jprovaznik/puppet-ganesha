@@ -1,0 +1,40 @@
+{
+  "name": "ganesha",
+  "version": "6.3.0",
+  "author": "Jan Provaznik",
+  "summary": "Puppet module for Ganesha",
+  "license": "Apache-2.0",
+  "source": "git://github.com/openstack/puppet-ganesha.git",
+  "project_page": "https://launchpad.net/puppet-ganesha",
+  "issues_url": "https://bugs.launchpad.net/puppet-ganesha",
+  "description": "Installs and configures Ganesha.",
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "4.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "4.x"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 3.2.0 < 5.0.0"},
+    {"name":"sensu/sensu"},
+    {"name":"yelp/uchiwa"}
+  ]
+}
